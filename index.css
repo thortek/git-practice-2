@@ -19,7 +19,7 @@ h4 {
 
 .container {
     display: flex;
-    flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .item {
@@ -32,4 +32,17 @@ h4 {
 .item-center {
     background-color: aqua;
     flex: 1;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
 }
