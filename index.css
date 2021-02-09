@@ -1,3 +1,12 @@
+:root {
+    box-sizing: border-box;
+    --main-bg-color: #284a45;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
 h1 {
     color: #050581;
     background-color: lemonchiffon;
@@ -5,4 +14,22 @@ h1 {
 
 h4 {
     color: darkcyan;
+    background-color: var(--main-bg-color);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    background-color: bisque;
+    margin: 0 2%;
+}
+
+.item-center {
+    background-color: aqua;
+    flex: 1;
 }
